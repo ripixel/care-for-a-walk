@@ -1,0 +1,65 @@
+html,
+body,
+main {
+  height: 100%;
+  min-height: 100vh;
+  color: #fff;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: x-large;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Hepta Slab', serif;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  h1 {
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  h5 {
+    font-size: 1.1rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+
+  p,
+  div,
+  button,
+  input,
+  li,
+  a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+  }
+
+  em {
+    font-weight: bold;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}

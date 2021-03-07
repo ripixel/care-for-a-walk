@@ -1,0 +1,65 @@
+{
+  "name": "care-for-a-walk",
+  "description": "Simple progress bar to show how far a given number of kilometres is against some pre-set waypoints",
+  "scripts": {
+    "build": "env NODE_ENV=production webpack",
+    "build:dev": "env NODE_ENV=development webpack",
+    "build:staging": "env NODE_ENV=staging webpack",
+    "dev": "env NODE_ENV=development webpack-dev-server",
+    "lint": "eslint \"src/**/*{.js,.jsx,.ts,.tsx}\"",
+    "lint:ci": "eslint \"src/**/*{.js,.jsx,.ts,.tsx}\" --format junit -o reports/eslint/results.xml",
+    "audit": "npm audit --audit-level=high --production",
+    "audit:ci": "npm run audit ; mkdir -p ~/tmp/reports/audit && touch ~/tmp/reports/audit/npm.json && npm run audit -- --json > ~/tmp/reports/audit/npm.json"
+  },
+  "author": "James King <ripixel@gmail.com>",
+  "engines": {
+    "node": "12.x.x"
+  },
+  "dependencies": {
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-redux": "^7.2.2"
+  },
+  "devDependencies": {
+    "@types/prettier": "^1.16.4",
+    "@types/react": "^16.14.2",
+    "@types/react-dom": "^16.9.10",
+    "@types/webpack": "^4.41.25",
+    "@typescript-eslint/eslint-plugin": "^4.14.0",
+    "@typescript-eslint/parser": "^4.14.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.6.0",
+    "dotenv": "^8.2.0",
+    "dotenv-flow-webpack": "^1.1.0",
+    "eslint": "^7.18.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-jest": "^24.1.3",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "file-loader": "^6.2.0",
+    "firebase-tools": "^8.19.0",
+    "html-webpack-plugin": "^4.5.0",
+    "husky": "^4.3.5",
+    "identity-obj-proxy": "^3.0.0",
+    "node-sass": "^4.14.1",
+    "prettier": "^2.2.1",
+    "pretty-quick": "^2.0.2",
+    "sass-loader": "^8.0.2",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^1.3.0",
+    "ts-loader": "^8.0.17",
+    "tslint": "^5.16.0",
+    "typed-css-modules-webpack-plugin": "^0.1.3",
+    "typescript": "^4.1.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run lint && npm run audit"
+    }
+  },
+  "version": "1.0.0"
+}
