@@ -32,8 +32,9 @@ export const ProgressBar: React.FC = () => {
   return (
     <div className={styles.container}>
       <p>
-        So far, we've made it to {locationsReachedAndNext[reached].title}! Next
-        up is {locationsReachedAndNext[next].title} - only{' '}
+        So far, we've made it to{' '}
+        <em>{locationsReachedAndNext[reached].title}</em>! Next up is{' '}
+        <em>{locationsReachedAndNext[next].title}</em> - only{' '}
         <em>
           {Math.floor(nextLocationDistanceFromStart - totalKmWalked)}
           km
@@ -83,6 +84,16 @@ export const ProgressBar: React.FC = () => {
                     }%`,
                   }}
                 />
+              )}
+              {index === locationsReachedAndNext.length - 1 && (
+                <span
+                  className={styles.totalMarker}
+                  style={{
+                    marginLeft: '100%',
+                  }}
+                >
+                  {nextLocationDistanceFromStart}km total
+                </span>
               )}
             </>
           )

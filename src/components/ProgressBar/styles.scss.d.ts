@@ -7,6 +7,7 @@ declare const styles: {
   readonly "progressBar": string;
   readonly "progressBarContainer": string;
   readonly "stripes-move": string;
+  readonly "totalMarker": string;
 };
 export = styles;
 

@@ -31,7 +31,8 @@
     transform: scaleX(-1);
     position: absolute;
     top: 5px;
-    right: -60px;
+    right: 0;
+    z-index: 2;
   }
 
   > span {
@@ -84,7 +85,7 @@
 .labels {
   padding-top: 40px;
   position: relative;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
 }
 
 .label {
@@ -110,4 +111,14 @@
 
 .container {
   padding: 30px;
+}
+
+.totalMarker {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  top: 115px;
+  font-size: 0.7rem;
+  transform: translateX(-50%);
+  line-height: 0.8rem;
 }
