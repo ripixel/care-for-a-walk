@@ -33,7 +33,7 @@ const LOCATIONS = [
 
 export const calculateLocations = async () => {
   const response = await fetch(
-    'https://spreadsheets.google.com/feeds/cells/1oVbQ8TvDtz8PZsUHe3jbr9ggtbEztAtKahSXEgVuD5c/1/public/full?alt=json'
+    'https://spreadsheets.google.com/feeds/cells/1grIa9udYh9K0C63qvbvyA7TyqzLuZPi4L0YWiu6uSfk/1/public/full?alt=json'
   );
   const data = (await response.json()) as any;
 
