@@ -29,6 +29,26 @@ const LOCATIONS = [
     distanceFromLastLocation: 756,
     distanceFromStartPoint: 3179,
   },
+  {
+    title: 'St Petersburg',
+    distanceFromLastLocation: 634,
+    distanceFromStartPoint: 3813,
+  },
+  {
+    title: 'Helsinki',
+    distanceFromLastLocation: 299,
+    distanceFromStartPoint: 4112,
+  },
+  {
+    title: 'Stockholm',
+    distanceFromLastLocation: 395,
+    distanceFromStartPoint: 4507,
+  },
+  {
+    title: 'Oslo',
+    distanceFromLastLocation: 416,
+    distanceFromStartPoint: 4923,
+  },
 ];
 
 export const calculateLocations = async () => {
