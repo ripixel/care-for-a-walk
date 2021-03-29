@@ -30,7 +30,7 @@ const LOCATIONS = [
     distanceFromStartPoint: 3179,
   },
   {
-    title: 'St Petersburg',
+    title: 'St.Petersburg',
     distanceFromLastLocation: 634,
     distanceFromStartPoint: 3813,
   },
